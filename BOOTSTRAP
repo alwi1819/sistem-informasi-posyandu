@@ -1,0 +1,51 @@
+<?php include 'auth/cek_login.php'; ?>
+<?php include 'koneksi.php'; ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Posyandu</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+<div class="card shadow">
+<div class="card-body">
+
+<h4 class="mb-3">Data Balita Posyandu</h4>
+
+<a href="tambah.php" class="btn btn-success mb-3">+ Tambah</a>
+<a href="logout.php" class="btn btn-danger mb-3 float-end">Logout</a>
+
+<table class="table table-bordered table-hover">
+<tr class="table-success">
+    <th>Nama</th>
+    <th>JK</th>
+    <th>Ibu</th>
+    <th>Aksi</th>
+</tr>
+
+<?php
+$data = mysqli_query($conn, "SELECT * FROM balita");
+while($d = mysqli_fetch_assoc($data)){
+?>
+<tr>
+<td><?= $d['nama_balita']; ?></td>
+<td><?= $d['jenis_kelamin']; ?></td>
+<td><?= $d['nama_ibu']; ?></td>
+<td>
+    <a href="edit.php?id=<?= $d['id_balita']; ?>" class="btn btn-warning btn-sm">Edit</a>
+    <a href="hapus.php?id=<?= $d['id_balita']; ?>" class="btn btn-danger btn-sm">Hapus</a>
+</td>
+</tr>
+<?php } ?>
+
+</table>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

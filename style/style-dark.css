@@ -1,0 +1,64 @@
+/* ===== FORCE DARK MODE ===== */
+
+body {
+    background-color: #0b1120 !important;
+    color: #e5e7eb !important;
+}
+
+/* Card */
+.card {
+    background-color: #020617 !important;
+    color: #e5e7eb !important;
+    border: none !important;
+}
+
+/* Header */
+h4 {
+    color: #22c55e !important;
+}
+
+/* Table */
+.table {
+    background-color: #020617 !important;
+    color: #e5e7eb !important;
+}
+
+.table thead th {
+    background-color: #166534 !important;
+    color: white !important;
+}
+
+.table td {
+    background-color: #020617 !important;
+    color: #e5e7eb !important;
+    border-color: #1e293b !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #1e293b !important;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #22c55e !important;
+}
+
+.btn-danger {
+    background-color: #ef4444 !important;
+}
+
+.btn-warning {
+    background-color: #facc15 !important;
+    color: black !important;
+}
+
+/* Badge */
+.badge {
+    background-color: #16a34a !important;
+}
+/* Samarkan logo agar menyatu dengan background */
+.logo-puskesmas {
+    opacity: 0.6;              /* tingkat transparansi */
+    filter: grayscale(100%);   /* abu-abu agar soft */
+}
+
