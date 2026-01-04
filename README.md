@@ -328,5 +328,5 @@ posyandu/
 **Version**: 1.0  
 **Last Update**: 4-01-2026
 
-© 2024 Kelompok 5 - Sistem Informasi Posyandu
+© 2026 Kelompok 2 - Sistem Informasi Posyandu
 ```
