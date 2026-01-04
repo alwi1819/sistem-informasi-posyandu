@@ -206,7 +206,7 @@ curl -X GET "http://localhost/posyandu/api/balita.php"
 curl -X GET "http://localhost/posyandu/api/balita.php?id=10"
 ```
 
-## 📁 Struktur Folder Proyek (Aktual)
+## 📁 Struktur Folder Proyek 
 ```
 posyandu/
 ├── api/
